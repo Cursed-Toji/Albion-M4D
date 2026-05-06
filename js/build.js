@@ -18,7 +18,7 @@ fetch("data/builds.json")
       return img;
     };
 
-    // EQUIPAMENTO
+    
     document.getElementById("head").appendChild(createIcon(build.equipamento.head));
     document.getElementById("armor").appendChild(createIcon(build.equipamento.armor));
     document.getElementById("shoes").appendChild(createIcon(build.equipamento.shoes));
@@ -32,7 +32,7 @@ fetch("data/builds.json")
     if (build.equipamento.offhand)
       document.getElementById("off").appendChild(createIcon(build.equipamento.offhand));
 
-    // CONSUMIVEIS
+
     const consDiv = document.getElementById("consumiveis");
 
     if (build.consumiveis) {
@@ -43,7 +43,6 @@ fetch("data/builds.json")
         consDiv.appendChild(createIcon(build.consumiveis.food));
     }
 
-    // SWAP (🔥 corrigido)
     const swapDiv = document.getElementById("swap");
     const swapContainer = document.getElementById("swap-container");
 
